@@ -80,6 +80,8 @@ select {
   --color-light: #f8f9fa;
   --color-dark: #343a40;
   --color-white: #ffff;
+  --color-gray: #dee1e6;
+  --color-dark-gray: #919a9e;
 }
 
 .container {
@@ -144,4 +146,134 @@ button {
 
 button:hover {
   opacity: 0.9;
+}
+
+/* popup overlay */
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 320px;
+  background-color: var(--color-light);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.form-header {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--color-gray);
+  padding-bottom: 1rem;
+}
+
+.form-title-text {
+  color: var(--color-dark-gray);
+}
+
+.form-row {
+  margin-bottom: 0.5rem;
+}
+
+.form-fullname {
+  display: flex;
+  gap: 0.5rem;
+}
+
+input {
+  font-weight: 300;
+  font-size: 0.89rem;
+}
+
+.form-control {
+  width: 100%;
+  background-color: var(--color-gray);
+  padding: 0.3rem;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 3px;
+}
+
+.select-row {
+  /* display: flex; */
+}
+
+.help-block {
+  font-size: 0.8rem;
+  color: var(--color-dark-gray);
+  margin-bottom: 0.3rem;
+}
+
+.birthday-wrapper,
+.geschlecht-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.birthday-wrapper select {
+  flex-grow: 1;
+  padding: 0.2rem;
+  border: 1px solid var(--color-dark-gray);
+  border-radius: 3px;
+  color: var(--color-dark-gray);
+}
+
+.geschlecht-input-container {
+  display: flex;
+  flex-grow: 1;
+  padding: 0.5rem;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid var(--color-dark-gray);
+  font-size: 0.8rem;
+  border-radius: 3px;
+  background-color: var(--color-white);
+}
+
+.bottom-text {
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.button-container {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+button {
+  background-color: var(--color-success);
+  color: var(--color-white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.2rem 3rem;
+  /* width: ; */
+}
+
+/* overlay */
+
+.form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  /* display: none; */
+}
+
+.close {
+  /* background-color: var(--color-gray); */
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: var(--color-white);
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }

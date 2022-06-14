@@ -61,3 +61,12 @@ function automatic() {
   index++;
   horizontal();
 }
+
+// POPUP
+
+let formOverlay = document.getElementById("formOverlay");
+let close = document.getElementById("close");
+
+close.addEventListener("click", () => {
+  formOverlay.style.display = "none";
+});

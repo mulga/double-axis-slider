@@ -44,6 +44,118 @@
       </div>
     </div>
 
+    <!-- popup form -->
+    <!-- popup form -->
+
+    <div class="form-overlay" id="formOverlay">
+      <div class="close" id="close">X</div>
+      <div class="form-container">
+        <div class="form-header">
+          <h2>Register</h2>
+          <p class="form-title-text">Es geht schnell und einfach</p>
+          <!-- <hr /> -->
+        </div>
+        <div class="form-content">
+          <!-- <form action=""></form> -->
+          <div class="form-row form-fullname">
+            <input
+              type="text"
+              placeholder="Vorname"
+              id="vorname"
+              class="form-control"
+            />
+            <input
+              type="text"
+              placeholder="Nachname"
+              id="nachname"
+              class="form-control"
+            />
+          </div>
+          <div class="form-row">
+            <input
+              type="email"
+              placeholder="Handy oder E-Mail Address"
+              id="vorname"
+              class="form-control"
+            />
+          </div>
+          <div class="form-row">
+            <input
+              type="password"
+              placeholder="Neues Password"
+              id="vorname"
+              class="form-control"
+            />
+          </div>
+          <div class="form-row select-row">
+            <p class="help-block">
+              Geburstag <i class="fa-solid fa-circle-question"></i>
+            </p>
+
+            <div class="birthday-wrapper">
+              <select name="birthday" id="birthday" class="form-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+              </select>
+              <select name="month" id="month" class="form-select">
+                <option value="Jan">Jan.</option>
+                <option value="Feb">Feb.</option>
+              </select>
+              <select name="year" id="year" class="form-select">
+                <option value="1990">1990</option>
+                <option value="1991">1991</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row select-row">
+            <p class="help-block">
+              Geschlecht <i class="fa-solid fa-circle-question"></i>
+            </p>
+
+            <div class="geschlecht-wrapper">
+              <div class="geschlecht-input-container">
+                <label for="weiblich">Weiblich</label>
+                <input
+                  type="radio"
+                  id="weiblich"
+                  name="geschlecht"
+                  value="weiblich"
+                />
+              </div>
+              <div class="geschlecht-input-container">
+                <label for="mannlich">Mannlich</label>
+                <input
+                  type="radio"
+                  id="mannlich"
+                  name="geschlecht"
+                  value="mannlich"
+                />
+              </div>
+              <div class="geschlecht-input-container">
+                <label for="divers">Divers</label>
+                <input
+                  type="radio"
+                  id="divers"
+                  name="geschlecht"
+                  value="divers"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-bottom">
+          <p class="bottom-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
+            soluta earum reprehenderit maxime iusto porro cum voluptatibus vel
+            sapiente fugit.
+          </p>
+        </div>
+        <div class="button-container">
+          <button class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+
     <!-- Js -->
     <script src="script.js"></script>
   </body>
